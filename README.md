@@ -10,7 +10,9 @@ https://www.katacoda.com/courses/dotnet-in-docker/deploying-aspnet-core-as-docke
 https://stormpath.com/blog/tutorial-deploy-asp-net-core-on-linux-with-docker
 
 2. start Docker quickstart Terminal
+
 3. move to project, with cd command
+
 4. Create Dockerfile (without .txt, just **Dockerfile** as Filename)
 ```
 FROM microsoft/dotnet:1.0.0-preview2-sdk
@@ -28,10 +30,13 @@ ENV ASPNETCORE_URLS http://*:5000
  
 ENTRYPOINT ["dotnet", "run"]
 ```
+
 5. Build docker instance
+
 ```
 docker build -t mydemos:aspnetcorehelloworld
 ```
+
 6. Run Docker
 ```
 docker run -d -p 8080:5000 -t mydemos:aspnetcorehelloworld
