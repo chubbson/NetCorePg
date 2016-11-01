@@ -3,7 +3,7 @@
 ### Doker
 
 1. Install Docker toolbox
-Links: 
+2. Usefull Docker Links: 
 ..* [docker tutoriallinks:](http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/)
 ..* http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/ 
 ..* https://www.docker.com/what-docker
