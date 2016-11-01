@@ -3,11 +3,12 @@
 ### Doker
 
 1. Install Docker toolbox
-Links: [docker tutoriallinks:](http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/)
-http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/ 
-https://www.docker.com/what-docker
-https://www.katacoda.com/courses/dotnet-in-docker/deploying-aspnet-core-as-docker-container
-https://stormpath.com/blog/tutorial-deploy-asp-net-core-on-linux-with-docker
+Links: 
+..* [docker tutoriallinks:](http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/)
+..* http://www.bloggedbychris.com/2016/05/24/setup-visual-studio-net-docker-windows-hour/ 
+..* https://www.docker.com/what-docker
+..* https://www.katacoda.com/courses/dotnet-in-docker/deploying-aspnet-core-as-docker-container
+..* https://stormpath.com/blog/tutorial-deploy-asp-net-core-on-linux-with-docker
 
 2. start Docker quickstart Terminal
 
@@ -31,26 +32,34 @@ ENV ASPNETCORE_URLS http://*:5000
 ENTRYPOINT ["dotnet", "run"]
 ```
 
-5. Build docker instance
+* Build docker instance
 
 ```
 docker build -t mydemos:aspnetcorehelloworld
 ```
 
-6. Run Docker
+* Run Docker
+
 ```
 docker run -d -p 8080:5000 -t mydemos:aspnetcorehelloworld
 ```
-7. Show Running docker instances
+
+* Show Running docker instances
+
 ```
 docker ps
 ```
-8. Stop running Docker instance (ref to name on ps call)
+
+* Stop running Docker instance (ref to name on ps call)
+
 ```
 docker stop app
 ```
-9. Uninstall Docker build
+
+* Uninstall Docker build
+
 ```
 docker rm app
 ```
-10. ready to rebuild new Docker 
+
+* ready to rebuild new Docker 
